@@ -216,7 +216,7 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 }
 
 .btn.btn-blue:hover {
-	background: #31b9ff;
+	background: #77649b;
 }
 
 .btn.btn-blue-fill {
@@ -847,6 +847,10 @@ footer .social-footer li:hover a {
 .popup-form .dropdown .dropdown-menu li:hover a {
 	color: #fff;
 	background: #00a8ff;
+}
+
+.inscription-line{
+    color: white;
 }
 
 /* Checkbox */

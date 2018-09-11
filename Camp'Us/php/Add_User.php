@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-    
+
     <head>
         <meta charset="utf-8" />
     </head>
     <body>
 
-    	<form action="Add_User_POST.php" method="post">
+    	<form action="Add_User_POST.php" method="POST">
    			<p>
    				<label for="nom"> Nom * </label> : <input type="text" name="nom" id="nom"> <br>
    				<label for="prenom"> Prénom * </label> : <input type="text" name="prenom" id="prenom"> <br>

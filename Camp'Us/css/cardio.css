@@ -205,6 +205,20 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	transition: all 0.3s ease;
 }
 
+.btn2 {
+	font-size: 22px;
+	display: inline-block;
+	padding: 15px 30px;
+	color: white;
+	border: 2px solid;
+    border-color: white;
+	border-radius: 2px;
+	background: transparent;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+    
+}
+
 .btn:hover,
 .btn:focus {
 	color: white;
@@ -223,11 +237,13 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	color: #00a8ff;
 	border-color: #00a8ff;
 	background: transparent;
+    opacity: 0.5;
 }
 
 .btn.btn-blue-fill:hover {
 	color: white;
 	background: #00a8ff;
+    opacity: 0.5;
 }
 
 .btn.btn-white-fill {
@@ -250,6 +266,67 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 .btn.btn-gray-fill:hover {
 	border-color: #bbb;
 	background: #bbb;
+    
+}
+
+
+.btn2:hover,
+.btn2:focus {
+	color: white;
+}
+
+.btn2.btn-blue {
+	background: rgba(255,255,255,0.5);
+    color: #1c0c37;
+}
+
+.btn2.btn-blue:hover {
+	background: #77649b;
+}
+
+.btn2.btn-blue-fill {
+	color: #00a8ff;
+	border-color: #00a8ff;
+	background: transparent;
+}
+
+.btn2.btn-blue-fill:hover {
+	color: white;
+	background: #00a8ff;
+}
+
+.btn2.btn-white-fill {
+	color: #fff;
+	border-color: #fff;
+	background: transparent;
+}
+
+.btn2.btn-white-fill:hover {
+	color: #00a8ff;
+	background: #fff;
+}
+
+.btn2.btn-gray-fill {
+	color: #fff;
+	border-color: #fff;
+	background: transparent;
+}
+
+.btn2.btn-gray-fill:hover {
+	border-color: #bbb;
+	background: #bbb;
+}
+
+
+
+
+
+.choix{
+    padding: 15px 0;
+}
+
+.bouton1{
+    padding: 15px 0;
 }
 
 /* Blink Cursor */
@@ -724,6 +801,28 @@ footer .social-footer li a {
 footer .social-footer li:hover a {
 	color: #00a8ff;
 }
+
+.categ li{
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.categ{
+    list-style: none;
+    height: 100px;
+}
+
+.categBouton {
+    display: inline-block;
+    background-color: aqua;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.categBouton li{
+    color: black;
+}
+
 /* Form Control */
 
 .form-control {

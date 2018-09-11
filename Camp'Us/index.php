@@ -78,9 +78,9 @@
                             <div class="bouton1">
 					           <a href="#" data-toggle="modal" data-target="#modal1" class="btn2 btn-blue">Proposer une activité !</a>
                             </div>
-                            <h4 class="light white"> - ou - </h4>
+                            <h3 class="light white"> - ou - </h3>
                             <div class="bouton1">
-					           <a href="#" data-toggle="modal" data-target="#modal1" class="btn2 btn-blue">Rejoindre quelqu'un !</a>
+					           <a href="#services" class="btn2 btn-blue">Rejoindre quelqu'un !</a>
                             </div>
                         </div>
                     </div>
@@ -96,29 +96,28 @@
 			</div>
             <div class="categChoix">
                 <div class="col-sm-12 text-center text-center-mobile">
-                    <ul class="categ">
-                        <div class="categBouton">
-                            <li><i class="fas fa-car"></i></li>
-                        </div>
-                        <div class="categBouton">
-                            <li><i class="fas fa-hotel"></i></li>
-                        </div>
-                        <div class="categBouton">
-                            <li><i class="fas fa-beer"></i></li>
-                        </div>
-                        <div class="categBouton">
-                            <li><i class="fas fa-cookie-bite"></i></li>
-                        </div>
-                        <div class="categBouton">
-                            <li><i class="fas fa-book"></i></li>
-                        </div>
-                        <div class="categBouton">
-                            <li><i class="fas fa-bicycle"></i></li>
-                        </div>
-                        <div class="categBouton">
-                            <li><i class="fas fa-tag"></i></li>
-                        </div>
-                        
+                    <ul class="categ" id="choixCateg">
+                        <li><a href="">
+                            <i class="fas fa-luggage-cart" href=""><h4 class="muted">Voyages</h4></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="far fa-building"><h4 class="muted">Hebergement</h4></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fas fa-beer"><h4 class="muted">Biture</h4></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fas fa-cookie-bite"><h4 class="muted">Manger</h4></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fas fa-book"><h4 class="muted">S'instruire</h4></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fas fa-bicycle"><h4 class="muted">Sport</h4></i>
+                        </a></li>
+                        <li><a href="">
+                            <i class="fas fa-tag"><h4 class="muted">Bons plans</h4></i>
+                        </a></li>
                     </ul>
                 </div>
             </div>    

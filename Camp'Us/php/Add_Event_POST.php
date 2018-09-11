@@ -12,10 +12,10 @@ isset($_POST['description']) AND !empty($_POST['description']))
     include('Connexion.php');
     //TODO Check for duplicate codes
     //Il me faut le nom des tables de la BD pour pouvoir adapter la requete
-    $req = $bdd->prepare("INSERT INTO Event (titre, id_luncher, categorie, datev, heure, lieu, descritpion) VALUES (?, ?, ?, ?, ?, ?, ?,)");
+    $req = $bdd->prepare("INSERT INTO Event (titre, id_launcher, categorie, datev, heure, lieu, description) VALUES (?, ?, ?, ?, ?, ?, ?,)");
     $req->execute(array(
         $_POST['titre'],
-        $_POST['id_luncher'],
+        $_POST['id_launcher'],
         $_POST['categorie'],
         $_POST['datev'],
         $_POST['heure'],

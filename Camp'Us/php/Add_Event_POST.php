@@ -7,6 +7,7 @@
 if(isset($_POST['titre']) AND !empty($_POST['titre']) AND
 isset($_POST['description']) AND !empty($_POST['description']) AND
 isset($_POST['datev']) AND !empty($_POST['datev']) AND
+isset($_POST['categorie']) AND !empty($_POST['categorie']) AND 
 isset($_POST['heure']) AND !empty($_POST['heure']) AND
 isset($_POST['lieu']) AND !empty($_POST['lieu']) AND
 isset($_POST['description']) AND !empty($_POST['description']))
@@ -14,7 +15,7 @@ isset($_POST['description']) AND !empty($_POST['description']))
 
     //c'est l'insertion de la catégorlie dou délice :oui:
 
-    $id = $req->fetch();
+/*    $id = $req->fetch();
 
     $js = empty($_POST['voyage']) ? 0 : 1;
     $php = empty($_POST['loger']) ? 0 : 1;
@@ -26,12 +27,13 @@ isset($_POST['description']) AND !empty($_POST['description']))
 
     $req = $bdd->prepare('INSERT INTO categorie (voyage, loger, restauration, sortir, culture, sport, bonsplans) VALUES (?, ?, ?, ?, ?, ?, ?)');
    
-   $req->execute(array($id[0], $js, $php, $c, $cpp, $cSharp, $html, $css, $sql, $phyton, $java, $oracle, $ruby, $secu, $reseaux, $ipv, $envsys));
+   $req->execute(array($id[0], $js, $php, $c, $cpp, $cSharp, $html, $css, $sql, $phyton, $java, $oracle, $ruby, $secu, $reseaux, $ipv, $envsys));*/
 
-    $req = $bdd->prepare("INSERT INTO Event (titre, datev, heure, lieu, description) VALUES (?, ?, ?, ?, ?)");
+    $req = $bdd->prepare("INSERT INTO Event (titre, datev, categorie, heure, lieu, description) VALUES (?, ?, ?, ?, ?)");
     $req->execute(array(
         $_POST['titre'],
         $_POST['datev'],
+        $_POST['categorie'],
         $_POST['heure'],
         $_POST['lieu'],
         $_POST['description']));

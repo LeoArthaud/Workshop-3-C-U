@@ -9,43 +9,16 @@
 
             <label for="titre"> Titre * </label> : <input type="text" name="titre" id="titre" placeholder="inscrivez-ici le titre de votre annonce"> <br>
 
-            <div>
-            <label for="categorie"> Catégorie * </label> :
-                    <div> 
-                    <input class="form-check-input" type="checkbox" name="voyager">
-                    <label class="form-check-label" for="inlineCheckbox1">Voyage</label>
-                    </div>
-
-                    <div> 
-                    <input class="form-check-input" type="checkbox" name="loger">
-                    <label class="form-check-label" for="inlineCheckbox1">Logement</label>
-                    </div>
-
-                    <div> 
-                    <input class="form-check-input" type="checkbox" name="restauration">
-                    <label class="form-check-label" for="inlineCheckbox1">Restauration</label>
-                    </div>
-
-                    <div> 
-                    <input class="form-check-input" type="checkbox" name="sortir">
-                    <label class="form-check-label" for="inlineCheckbox1">Sortir</label>
-                    </div>
-
-                    <div> 
-                    <input class="form-check-input" type="checkbox" name="culture">
-                    <label class="form-check-label" for="inlineCheckbox1">Culture</label>
-                    </div>
-
-                    <div> 
-                    <input class="form-check-input" type="checkbox" name="sport">
-                    <label class="form-check-label" for="inlineCheckbox1">Sport</label>
-                    </div>
-
-                    <div> 
-                    <input class="form-check-input" type="checkbox" name="bonsplans">
-                    <label class="form-check-label" for="inlineCheckbox1">Bons plans</label>
-                    </div>
-            </div>
+            <label for="promo"> Catégorie * </label> :
+                    <select name="promo" id="promo">
+                        <option value="voyager">Voyager</option>
+                        <option value="loger">Loger</option>
+                        <option value="restauration">Restauration</option>
+                        <option value="sortir">Sortir</option>
+                        <option value="culture">Culture</option>
+                        <option value="sport">Sport</option>
+                        <option value="bonsplans">Bons plans</option>
+                    </select> <br>
 
             <label for="datev"> Date de l'évènement * </label> : <input type="text" name="datev" id="datev"> <br>
             <label for="heure"> Heure * </label> : <input type="text" name="heure" id="heure"> <br>

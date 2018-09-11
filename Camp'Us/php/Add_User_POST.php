@@ -23,11 +23,14 @@ isset($_POST['infos']) AND !empty($_POST['infos'])
     $hashedPass = password_hash( $unHahedPassPlusSalt, PASSWORD_BCRYPT, $options);*/
     $hashedPass = hash('sha512', $unHahedPassPlusSalt);
 
-    $req = $bdd->prepare("INSERT INTO User (email, nom, prenom, mdp, promo, infos) VALUES(?, ?, ?, ?, ?, ?)");
+    $req = $bdd->prepare("INSERT INTO User (nom, prenom, email, mdp, promo, infos) VALUES(?, ?, ?, ?, ?, ?)");
     $req->execute(array(
-    $_POST['email'], $hashedPass,
-    $_POST['nom'],$_POST['prenom'],
-    $_POST['promo'], $_POST['infos']));
+    $_POST['nom'],
+    $_POST['prenom'],
+    $_POST['email'],
+    $hashedPass, 
+    $_POST['promo'], 
+    $_POST['infos']));
 
         header('Location: ../index.php');
 }

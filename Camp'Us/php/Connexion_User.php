@@ -1,15 +1,15 @@
 <?php
 session_start ();
-include('../connexion.php');
+include('Connexion.php');
 
 // on teste si nos variables sont définies
-if  (isset($_POST['Mdp']) AND !empty($_POST['Mdp']) AND
-    isset($_POST['Mail']) AND !empty($_POST['Mail'])) {
+if  (isset($_POST['mdp']) AND !empty($_POST['mdp']) AND
+    isset($_POST['email']) AND !empty($_POST['email'])) {
     $salt = "W0rksh0pe-2_@dRi1/Nik0l@\Loup/LeHaut";
-    $unHahedPass = $_POST['Mdp'];
+    $unHahedPass = $_POST['mdp'];
     $unHahedPassPlusSalt = $salt . $unHahedPass;
     $hashedPass = hash('sha512', $unHahedPassPlusSalt);
-    debug_to_console($_POST['Mail']);
+    debug_to_console($_POST['email']);
     $reponse = $bdd -> prepare("SELECT * FROM `User` WHERE email = (?)");
     $reponse -> execute(array($_POST['email']));
     while ($value = $reponse->fetch())
@@ -26,10 +26,10 @@ if  (isset($_POST['Mdp']) AND !empty($_POST['Mdp']) AND
         // demarrage session
         session_start ();
         // on enregistre les paramètres de notre visiteur comme variables de session ($login et $pwd) (notez bien que l'on utilise pas le $ pour enregistrer ces variables)
-        $_SESSION['Mail'] = $_POST['Mail'];
-        $_SESSION['Mdp'] = $_POST['Mdp'];
+        $_SESSION['email'] = $_POST['email'];
+        $_SESSION['mdp'] = $_POST['mdp'];
         $_SESSION['IdUserCurrent'] = $IdUserCurrent;
-        header('Location: ../index.html');
+        header('Location: ../indexUserCo.php');
         //echo '<body onLoad="alert(\'maintennat conctervictoie\')">';
     }
     else {

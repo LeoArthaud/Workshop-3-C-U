@@ -131,9 +131,9 @@
 			<div class="modal-content modal-popup">
 				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
 				<h3 class="white">Connexion</h3>
-				<form action="php/Connexion_User.php" method='POST' class="popup-form">
-					<input type="text" class="form-control form-white" name='email' placeholder="Adresse E-mail">
-					<input type="text" class="form-control form-white" name='mdp' placeholder="Mot de passe">
+				<form action="Connexion_User.php" class="popup-form">
+					<input type="text" class="form-control form-white" placeholder="Adresse E-mail">
+					<input type="text" class="form-control form-white" placeholder="Mot de passe">
                         <div class="inscription-line">
 							<label for="squaredOne"><span>Toujours pas de compte ? <strong> <a href="php/Add_User.php"> S'inscrire </a></strong></span></label>
                         </div>

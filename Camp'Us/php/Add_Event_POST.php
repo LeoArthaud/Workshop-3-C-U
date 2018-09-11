@@ -29,7 +29,7 @@ isset($_POST['description']) AND !empty($_POST['description']))
    
    $req->execute(array($id[0], $js, $php, $c, $cpp, $cSharp, $html, $css, $sql, $phyton, $java, $oracle, $ruby, $secu, $reseaux, $ipv, $envsys));*/
 
-    $req = $bdd->prepare("INSERT INTO Event (titre, datev, categorie, heure, lieu, description) VALUES (?, ?, ?, ?, ?)");
+    $req = $bdd->prepare("INSERT INTO Event (titre, datev, categorie, heure, lieu, description) VALUES (?, ?, ?, ?, ?, ?)");
     $req->execute(array(
         $_POST['titre'],
         $_POST['datev'],

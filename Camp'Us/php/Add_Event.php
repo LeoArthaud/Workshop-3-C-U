@@ -9,8 +9,8 @@
 
             <label for="titre"> Titre * </label> : <input type="text" name="titre" id="titre" placeholder="inscrivez-ici le titre de votre annonce"> <br>
 
-            <label for="promo"> Catégorie * </label> :
-                    <select name="promo" id="promo">
+            <label for="categorie"> Catégorie * </label> :
+                    <select name="categorie" id="categorie">
                         <option value="voyager">Voyager</option>
                         <option value="loger">Loger</option>
                         <option value="restauration">Restauration</option>

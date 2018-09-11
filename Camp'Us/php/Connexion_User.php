@@ -16,7 +16,7 @@ if  (isset($_POST['Mdp']) AND !empty($_POST['Mdp']) AND
     {
         $mailUser = $value["email"];
         $mdpUser = $value["mdp"];
-        $IdUserCurrent = $value["Id_user"];
+        $IdUserCurrent = $value["id_user"];
     }
 
     $reponse->closeCursor();
@@ -52,11 +52,4 @@ function debug_to_console( $data ) {
     echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
 }
 
-
-/**
- * Created by PhpStorm.
- * User: leoar
- * Date: 11/09/2018
- * Time: 12:55
- */
 ?>

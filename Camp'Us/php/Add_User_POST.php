@@ -25,12 +25,11 @@ isset($_POST['Annee']) AND !empty($_POST['Annee']) AND
     $hashedPass = password_hash( $unHahedPassPlusSalt, PASSWORD_BCRYPT, $options);*/
     $hashedPass = hash('sha512', $unHahedPassPlusSalt);
 
-    $req = $bdd->prepare("INSERT INTO Workshop2_Utilisateur (Mail, Mdp, Nom, Prenom, Telephone, Campus, Annee) VALUES(?, ?, ?, ?, ?, ?, ?)");
+    $req = $bdd->prepare("INSERT INTO User (email, nom, prenom, mdp, promo, info) VALUES(?, ?, ?, ?, ?,)");
     $req->execute(array(
-    $_POST['Mail'], $hashedPass,
-    $_POST['Nom'],$_POST['Prenom'],
-    $_POST['Telephone'], $_POST['Campus'],
-    $_POST['Annee']));
+    $_POST['email'], $hashedPass,
+    $_POST['nom'],$_POST['prenom'],
+    $_POST['promo'], $_POST['info']));
 
 
 

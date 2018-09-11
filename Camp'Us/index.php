@@ -15,6 +15,7 @@
 	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="shortcut icon" href="img/favicons/favicon.ico">
 	<meta name="msapplication-TileColor" content="#00a8ff">
 	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
@@ -97,28 +98,25 @@
                 <div class="col-sm-12 text-center text-center-mobile">
                     <ul class="categ">
                         <div class="categBouton">
-                            <li><i class="fas fa-football-ball"></i></li>
+                            <li><i class="fas fa-car"></i></li>
                         </div>
                         <div class="categBouton">
-                            <li><i class="fas fa-football-ball"></i></li>
+                            <li><i class="fas fa-hotel"></i></li>
                         </div>
                         <div class="categBouton">
-                            <li><i class="fas fa-football-ball"></i></li>
+                            <li><i class="fas fa-beer"></i></li>
                         </div>
                         <div class="categBouton">
-                            <li><i class="fas fa-football-ball"></i></li>
+                            <li><i class="fas fa-cookie-bite"></i></li>
                         </div>
                         <div class="categBouton">
-                            <li><i class="fas fa-football-ball"></i></li>
+                            <li><i class="fas fa-book"></i></li>
                         </div>
                         <div class="categBouton">
-                            <li><i class="fas fa-football-ball"></i></li>
+                            <li><i class="fas fa-bicycle"></i></li>
                         </div>
                         <div class="categBouton">
-                            <li><i class="fas fa-football-ball"></i></li>
-                        </div>
-                        <div class="categBouton">
-                            <li><i class="fas fa-football-ball"></i></li>
+                            <li><i class="fas fa-tag"></i></li>
                         </div>
                         
                     </ul>

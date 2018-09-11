@@ -814,13 +814,20 @@ footer .social-footer li:hover a {
 
 .categBouton {
     display: inline-block;
-    background-color: aqua;
     margin: 0 auto;
-    border: 1px solid black;
+    width: 100px;
+    height: 100px;
 }
 
-.categBouton li{
-    color: black;
+.categBouton i{
+    height: 100px;
+    width: 100px;
+    color: #fdce37;
+}
+
+i.fas{
+    height: 100px;
+    width: 100px;
 }
 
 /* Form Control */

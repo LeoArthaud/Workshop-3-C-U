@@ -25,7 +25,7 @@ isset($_POST['Annee']) AND !empty($_POST['Annee']) AND
     $hashedPass = password_hash( $unHahedPassPlusSalt, PASSWORD_BCRYPT, $options);*/
     $hashedPass = hash('sha512', $unHahedPassPlusSalt);
 
-    $req = $bdd->prepare("INSERT INTO User (email, nom, prenom, mdp, promo, info) VALUES(?, ?, ?, ?, ?,)");
+    $req = $bdd->prepare("INSERT INTO User (email, nom, prenom, promo, info) VALUES(?, ?, ?, ?)");
     $req->execute(array(
     $_POST['email'], $hashedPass,
     $_POST['nom'],$_POST['prenom'],

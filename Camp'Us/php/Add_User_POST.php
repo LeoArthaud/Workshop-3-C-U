@@ -34,11 +34,11 @@ isset($_POST['Annee']) AND !empty($_POST['Annee']) AND
 
 
 
-        header('Location: ../Site 2/index.php');
+        header('Location: ../index.php');
 }
 else{
     // Redirection du visiteur vers la page
-        header('Location: ../Site 2/index.php');
+        header('Location: ../index.php');
 
 
 }

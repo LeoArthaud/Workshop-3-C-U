@@ -6,19 +6,6 @@
     <body>
         <p>
         <form method='POST' action='Add_Event_POST.php'>
-<<<<<<< HEAD
-            Merci de cocher une activite :<br>
-            <input type=""
-            <input type="checkbox" name="activite[]" value="Voyager"> Voyager<br>
-            <input type="checkbox" name="activite[]" value="Se loger"> Se loger<br>
-            <input type="checkbox" name="activite[]" value="Se restaurer"> Se restaurer<br>
-            <input type="checkbox" name="activite[]" value="Sortir"> Sortir<br>
-            <input type="checkbox" name="activite[]" value="Se cultiver"> Se cultiver<br>
-            <input type="checkbox" name="activite[]" value="Faire du sport"> Faire du sport<br>
-            <input type="checkbox" name="activite[]" value="Profiter de bon plans "> Profiter de bon plans r<br>
-            <input type="submit" name="activiter" value="Résultats">
-            </p>
-=======
 
             <label for="titre"> Titre * </label> : <input type="text" name="titre" id="titre" placeholder="inscrivez-ici le titre de votre annonce"> <br>
 
@@ -68,7 +55,6 @@
 
             <label for="description"> Description * </label> : <input type="text" name="titre" id="titre" placeholder="Parlez un peu de ce que vous comptez faire..."> <br>
   
->>>>>>> master
         </form>
         </p>
 

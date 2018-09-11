@@ -31,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Add_User_POST.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Add_User_POST.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/Add_User_POST.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
@@ -44,6 +44,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Connexion_User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/Connexion_User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+              <folding>
+                <marker date="1536663482468" expanded="true" signature="470:508" ph="SELECT * FRO... User" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="IdeDocumentHistory">
@@ -51,6 +63,7 @@
       <list>
         <option value="$PROJECT_DIR$/php/Connexion.php" />
         <option value="$PROJECT_DIR$/php/Add_User_POST.php" />
+        <option value="$PROJECT_DIR$/php/Connexion_User.php" />
       </list>
     </option>
   </component>
@@ -132,12 +145,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536655850808</updated>
-      <workItem from="1536655852408" duration="3974000" />
+      <workItem from="1536655852408" duration="4962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3974000" />
+    <option name="totallyTimeSpent" value="4962000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-1089" width="1618" height="868" extended-state="6" />
@@ -208,6 +221,16 @@
           <folding>
             <marker date="1536659563240" expanded="true" signature="965:1046" ph="INSERT INTO User... " />
             <marker date="1536659563240" expanded="true" signature="965:1086" ph="INSERT INTO User... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Connexion_User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+          <folding>
+            <marker date="1536663482468" expanded="true" signature="470:508" ph="SELECT * FRO... User" />
           </folding>
         </state>
       </provider>

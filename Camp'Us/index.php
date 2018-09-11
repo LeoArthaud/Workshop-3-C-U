@@ -133,11 +133,11 @@
 			<div class="modal-content modal-popup">
 				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
 				<h3 class="white">Connexion</h3>
-				<form action="" class="popup-form">
+				<form action="Connexion_User.php" class="popup-form">
 					<input type="text" class="form-control form-white" placeholder="Adresse E-mail">
 					<input type="text" class="form-control form-white" placeholder="Mot de passe">
                         <div class="inscription-line">
-							<label for="squaredOne"><span>Toujours pas de compte ? <strong>S'inscrire</strong></span></label>
+							<label for="squaredOne"><span>Toujours pas de compte ? <strong> <a href="Add_User.php"> S'inscrire </a></strong></span></label>
                         </div>
 					<button type="submit" class="btn btn-submit">Se connecter</button>
 				</form>

@@ -135,7 +135,7 @@
 					<input type="text" class="form-control form-white" placeholder="Adresse E-mail">
 					<input type="text" class="form-control form-white" placeholder="Mot de passe">
                         <div class="inscription-line">
-							<label for="squaredOne"><span>Toujours pas de compte ? <strong> <a href="Add_User.php"> S'inscrire </a></strong></span></label>
+							<label for="squaredOne"><span>Toujours pas de compte ? <strong> <a href="php/Add_User.php"> S'inscrire </a></strong></span></label>
                         </div>
 					<button type="submit" class="btn btn-submit">Se connecter</button>
 				</form>

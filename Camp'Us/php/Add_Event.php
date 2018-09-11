@@ -7,6 +7,7 @@
         <p>
         <form method='POST' action='Add_Event_POST.php'>
             Merci de cocher une activite :<br>
+            <input type=""
             <input type="checkbox" name="activite[]" value="Voyager"> Voyager<br>
             <input type="checkbox" name="activite[]" value="Se loger"> Se loger<br>
             <input type="checkbox" name="activite[]" value="Se restaurer"> Se restaurer<br>

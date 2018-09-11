@@ -6,7 +6,7 @@ isset($_POST['Contenu']) AND !empty($_POST['Contenu'])
     include('connexion.php');
     //TODO Check for duplicate codes
     //Il me faut le nom des tables de la BD pour pouvoir adapter la requete
-    $req = $bdd->prepare("INSERT INTO Workshop2_Topic (Sujet, Categorie, Contenu, Id_User_Workshop2_Utilisateur ) VALUES (?, ?, ?,?)");
+    $req = $bdd->prepare("INSERT INTO Event (Sujet, Categorie, Contenu, Id_User_Workshop2_Utilisateur ) VALUES (?, ?, ?,?)");
     $req->execute(array(
         $_POST['Sujet'],
         $_POST['CategoriePage'],

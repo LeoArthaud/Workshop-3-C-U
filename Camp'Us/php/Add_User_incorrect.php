@@ -8,7 +8,7 @@
 
 <form action="Add_User_POST.php" method="POST">
     <p>
-        <strong>Tous les champs n'ont pas etait remplis, veuillez remplire les champs avec une * </strong>
+        <strong>Veuillez remplir tout les champs* </strong>
         <label for="nom"> Nom * </label> : <input type="text" name="nom" id="nom"> <br>
         <label for="prenom"> Prénom * </label> : <input type="text" name="prenom" id="prenom"> <br>
         <label for="email"> Adresse e-mail * </label> : <input type="text" name="email" id="email"> <br>

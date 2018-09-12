@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+require("Check_Session.php");
 // Connexion à la base de données
 include('Connexion.php');
 

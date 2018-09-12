@@ -20,8 +20,7 @@
             <option value="I4">I4</option>
             <option value="I5">I5</option>
         </select> <br>
-        <label for="infos"> Présentez-vous </label> : <input type="text" name="infos" id="infos"
-                                                             placeholder="centres d'intérêts, hobbies, etc... "> <br>
+        <label for="infos"> Présentez-vous </label> : <input type="text" name="infos" id="infos" placeholder="centres d'intérêts, hobbies, etc... "> <br>
 
         <input type="submit" value="C'est parti!">
     </p>

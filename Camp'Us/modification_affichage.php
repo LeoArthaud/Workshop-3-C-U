@@ -63,7 +63,7 @@ if(isset($_POST['nouveauMDP']) AND !empty($_POST['nouveauMDP']) AND isset($_POST
     
 }
 
-<?php if (isset($msg)) { echp $msg; } />
+<?php if (isset($msg)) { echo $msg; } />
     
     
     <?php

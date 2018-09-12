@@ -17,9 +17,9 @@ require("../Connexion.php");
 		</p>
 
 <?php
-
-$req = $bdd->prepare('SELECT titre FROM Event WHERE categorie = "loger" ');
-$req->execute(array($_GET['Event']));
+$event='loger';
+$req = $bdd->prepare('SELECT titre FROM Event WHERE categorie = ? ');
+$req->execute(array($event));
 $contenu = $req->fetch();
 
 

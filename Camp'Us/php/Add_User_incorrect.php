@@ -8,6 +8,7 @@
 
 <form action="Add_User_POST.php" method="POST">
     <p>
+        <strong>Tous les champs n'ont pas etait remplis, veuillez remplire les champs avec une * </strong>
         <label for="nom"> Nom * </label> : <input type="text" name="nom" id="nom"> <br>
         <label for="prenom"> Prénom * </label> : <input type="text" name="prenom" id="prenom"> <br>
         <label for="email"> Adresse e-mail * </label> : <input type="text" name="email" id="email"> <br>
@@ -20,8 +21,7 @@
             <option value="I4">I4</option>
             <option value="I5">I5</option>
         </select> <br>
-        <label for="infos"> Présentez-vous </label> : <input type="text" name="infos" id="infos"
-                                                             placeholder="centres d'intérêts, hobbies, etc... "> <br>
+        <label for="infos"> Présentez-vous </label> : <input type="text" name="infos" id="infos" placeholder="centres d'intérêts, hobbies, etc... "> <br>
 
         <input type="submit" value="C'est parti!">
     </p>

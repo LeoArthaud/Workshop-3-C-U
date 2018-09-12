@@ -44,19 +44,10 @@
 <div class="preloader">
     <img src="../img/loader.gif" alt="Preloader image">
 </div>
-<nav class="navbar">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-            </button>
-            <a class="navbar-brand" href="#"><img src="../img/logoTestViolet.png" data-active-url="img/logoTest-Active.png"
-                                                  alt="" style="width: 100px; height: 34px;"></a>
-        </div>
+
+    <div class="navInscription">
+         <img src="../img/logoTest.png" alt="Preloader image" style="width: 175px; height: 75px;">
     </div>
-    <!-- /.container-fluid -->
-</nav>
 
     <header id="intro" style="background:url(../img/backBlanc.png); background-size: cover;">
     <div class="container">

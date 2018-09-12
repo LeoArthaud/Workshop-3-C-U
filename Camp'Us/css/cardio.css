@@ -188,6 +188,23 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	color: #bbb;
 }
 
+
+.navInscription{
+    height: 100%;
+    width: 100%;
+
+    background-image: url('../img/headerbar2.png');
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+}
+
+.navInscription img{
+   text-align: center;
+    padding: 10px 0;
+    text-align: center;
+}
+
 .icon-bar {
 	background: #bbb;
 }
@@ -734,7 +751,7 @@ section {
 /* Footer */
 
 footer {
-	padding: 30px 0 20px;
+	padding: 15px 0 5px;
 	background: url('../img/headerbar.png');
 	-webkit-background-size: cover;
 	background-size: cover;

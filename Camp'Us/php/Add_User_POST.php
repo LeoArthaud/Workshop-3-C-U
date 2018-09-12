@@ -26,6 +26,9 @@ if (isset($_POST['nom']) AND !empty($_POST['nom']) AND
         $_POST['promo'],
         $_POST['infos']));
 
+    $donnees = $req->fetch();
+    $_SESSION['id_user'] = $donnees[0];
+
     header('Location: ../index.php');
 } else {
     // message d'alerte pour infiormer que ça na pas marcher

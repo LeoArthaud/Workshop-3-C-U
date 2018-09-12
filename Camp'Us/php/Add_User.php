@@ -39,51 +39,24 @@
     <link rel="stylesheet" type="text/css" href="../css/cardio.css">
 </head>
     
-<body scroll="no" style="overflow: hidden">
+<body>
     
 <div class="preloader">
     <img src="../img/loader.gif" alt="Preloader image">
 </div>
-<nav class="navbar" "background:url(../img/headerbar.png);">
+<nav class="navbar">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#"><img src="../img/logoTestViolet.png" data-active-url="img/logoTest-Active.png"
                                                   alt="" style="width: 100px; height: 34px;"></a>
         </div>
-
-<<<<<<< HEAD
-<form action="Add_User_POST.php" method="POST">
-    <p>
-        <label for="nom"> Nom * </label> : <input type="text" name="nom" id="nom"> <br>
-        <label for="prenom"> Prénom * </label> : <input type="text" name="prenom" id="prenom"> <br>
-        <label for="email"> Adresse e-mail * </label> : <input type="text" name="email" id="email"> <br>
-        <label for="mdp"> Mot de passe * </label> : <input type="password" name="mdp"> <br>
-        <label for="promo"> Promo * </label> :
-        <select name="promo" id="promo">
-            <option value="B1">B1</option>
-            <option value="B2">B2</option>
-            <option value="B3">B3</option>
-            <option value="I4">I4</option>
-            <option value="I5">I5</option>
-        </select> <br>
-        <label for="infos"> Présentez-vous </label> : <input type="text" name="infos" id="infos" placeholder="centres d'intérêts, hobbies, etc... "> <br>
-
-        <input type="submit" value="C'est parti!">
-    </p>
-</form>
-=======
     </div>
     <!-- /.container-fluid -->
 </nav>
->>>>>>> master
 
     <header id="intro" style="background:url(../img/backBlanc.png); background-size: cover;">
     <div class="container">
@@ -111,7 +84,7 @@
                                     <option value="I4">I4</option>
                                     <option value="I5">I5</option>
                                 </select> <br>
-                                <label for="infos"> Présentez-vous </label> : <input type="text" name="infos" id="infos"
+                                <label for="infos"> Présentez-vous </label><input type="text" name="infos" id="infos"
                                                              placeholder="centres d'intérêts, hobbies, etc... "> <br>
                             <input type="submit" class="btn btn-blue submit" value="C'EST PARTI !" style="margin-top: 30px;">
                             </p>
@@ -125,26 +98,7 @@
 		</div>
         </div>
 	</header>
-    
-    
-<footer>
-    <div class="container">
-        <div class="row">
-        </div>
-        <div class="row bottom-footer text-center-mobile">
-            <div class="col-sm-8">
-                <p>&copy; 2018 All Rights Reserved. Powered by Team D-lice</p>
-            </div>
-            <div class="col-sm-4 text-right text-center-mobile">
-                <ul class="social-footer">
-                    <li><i class="fa fa-facebook" style="font-size: 24px; color: #fff;"></i></li>
-                    <li><i class="fa fa-twitter" style="font-size: 24px; color: #fff;"></i></li>
-                    <li><i class="fa fa-google-plus" style="font-size: 24px; color: #fff;"></i></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>    
+      
     
 <!-- Scripts -->
 <script src="../js/jquery-1.11.1.min.js"></script>

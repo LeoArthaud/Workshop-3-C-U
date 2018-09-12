@@ -65,7 +65,11 @@ require("php/Connexion.php");
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right main-nav user">
+<<<<<<< Updated upstream
                 <li><a href="#" data-toggle="modal" data-target="#modal2">
+=======
+                <li><a href="php/Show_User.php">
+>>>>>>> Stashed changes
                     <i class="far fa-user"><h5 class="white" style="float:left;"><?php echo $_SESSION['prenom'] ?></h5></i>
                 </a></li>
             </ul>

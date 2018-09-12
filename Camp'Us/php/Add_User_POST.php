@@ -30,7 +30,7 @@ if (isset($_POST['nom']) AND !empty($_POST['nom']) AND
     /*$donnees = $req->fetch();
     $_SESSION['prenom'] = $donnees[0];*/
 
-    header('Location: Connexion_User.php');
+    header('Location: ../index.php');
 } else {
     // message d'alerte pour infiormer que ça na pas marcher
     header('Location: ../Add_User_incorrect.php');}

@@ -1,6 +1,6 @@
 <?php
 
-include('Connexion.php');
+require('Connexion.php');
 $email = $_POST['email'];
 
 //verification des champs, si ils sont pas vide et valide

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require "Connexion.php";
+require ("Connexion.php");
 
 $salt = "W0rksh0pe-3_M@achA/NiCoLAs\l'e-au/Y@aZiD";
 $unHahedPass = $_POST['mdp'];

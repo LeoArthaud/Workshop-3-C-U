@@ -1,3 +1,8 @@
+<?php
+session_start();
+require("php/Check_Session.php");
+require("php/Connexion.php");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -61,7 +66,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right main-nav user">
                 <li><a href="">
-                    <i class="far fa-user"><h5 class="white" style="float:left;">Nicolas Asri</h5></i>
+                    <i class="far fa-user"><h5 class="white" style="float:left;"><?php echo $_SESSION['prenom'] ?></h5></i>
                 </a></li>
             </ul>
         </div>
@@ -77,7 +82,7 @@
                     <div class="col-md-12 text-center">
                         <h1 class="white typed">Bienvenue sur Camp'Us Grenoble !</h1>
                         <span class="typed-cursor">|</span>
-                        <h3 class="light white"><?php echo $_SESSION ?></h3>
+                        <h3 class="light white"><?php echo $_SESSION['prenom'] ?></h3>
                     </div>
                 </div>
                 <div class="choix">

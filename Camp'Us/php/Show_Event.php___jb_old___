@@ -17,7 +17,7 @@ require("Connexion.php");
 
         <!-- On récupère les infos de l'event-->
         <?php
-        $req = $bdd->prepare('SELECT titre, datev, heure, description FROM Event WHERE event='.$_POST['event']);
+        $req = $bdd->prepare('SELECT titre, datev, heure, description FROM Event WHERE '$_POST['Event']' ');
         $req->execute(array($_GET['Event']));
         $contenu = $req->fetch();
         ?>
@@ -54,12 +54,12 @@ require("Connexion.php");
         <?php
         $req->closeCursor();
 
-        $req = $bdd->prepare("SELECT nom, prenom FROM User WHERE Comment'.'id_commenter = User'.'id_user");
+        $req = $bdd->prepare("SELECT nom, prenom FROM User WHERE Comment'.'id_commenter = User'.'id_user' ");
         $req->execute(array($GET['Commenter']));
         $commenter = $req->fetch();
 
 
-        $req = $bdd->prepare("SELECT content FROM Comment WHERE Comment'.'id_event = Event'.'id_event");
+        $req = $bdd->prepare("SELECT content FROM Comment WHERE Comment'.'id_event = Event.'id_event");
         $req->execute(array($_GET['CommentEvent']));
 
 

@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_POST['nom']) AND !empty($_POST['nom']) AND
     isset($_POST['prenom']) AND !empty($_POST['prenom']) AND
     isset($_POST['email']) AND !empty($_POST['email']) AND
@@ -26,10 +27,10 @@ if (isset($_POST['nom']) AND !empty($_POST['nom']) AND
         $_POST['promo'],
         $_POST['infos']));
 
-    $donnees = $req->fetch();
-    $_SESSION['id_user'] = $donnees[0];
+    /*$donnees = $req->fetch();
+    $_SESSION['prenom'] = $donnees[0];*/
 
-    header('Location: ../index.php');
+    header('Location: Connexion_User.php');
 } else {
     // message d'alerte pour infiormer que ça na pas marcher
     header('Location: ../Add_User_incorrect.php');}

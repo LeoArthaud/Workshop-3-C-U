@@ -1,8 +1,7 @@
 <?php
-
 session_start();
-require("Check_Session.php");
-
+require("../Check_Session.php");
+require("../Connexion.php");
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +18,7 @@ require("Check_Session.php");
 
 <?php
 
-$req = $bdd('SELECT titre FROM Event WHERE categorie = "culture" '); 
+$req = $bdd->prepare('SELECT titre FROM Event WHERE categorie = "culture" ');
 $req->execute(array($_GET['Event']));
 $contenu = $req->fetch();
 

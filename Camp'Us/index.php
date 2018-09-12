@@ -88,35 +88,33 @@
                             <a href="#services" class="btn2 btn-blue">Rejoindre quelqu'un !</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<section id="services" class="section section-padded">
-    <div class="container">
-        <div class="row text-center title">
-            <h2>Rejoins des gens !</h2>
-            <h4 class="light muted">Choisis l'activité de ton choix et découvre qui de ton campus veut faire de même
-                !</h4>
-        </div>
-        <div class="categChoix">
-            <div class="col-sm-12 text-center text-center-mobile">
-                <ul class="categ" id="choixCateg">
-                    <li><a href="">
-                            <i class="fas fa-luggage-cart" href=""><h4 class="muted">Voyages</h4></i>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="services" class="section section-padded">
+		<div class="container">
+			<div class="row text-center title">
+				<h2>Rejoins des gens !</h2>
+				<h4 class="light muted">Choisis l'activité de ton choix et découvre qui de ton campus veut faire de même !</h4>
+			</div>
+            <div class="categChoix">
+                <div class="col-sm-12 text-center text-center-mobile">
+                    <ul class="categ" id="choixCateg">
+                        <li><a href="">
+                            <i class="fas fa-luggage-cart" href=""><h4 class="muted">Voyage</h4></i>
                         </a></li>
                     <li><a href="">
                             <i class="far fa-building"><h4 class="muted">Hebergement</h4></i>
                         </a></li>
-                    <li><a href="">
-                            <i class="fas fa-beer"><h4 class="muted">Biture</h4></i>
+                        <li><a href="">
+                            <i class="fas fa-beer"><h4 class="muted">Sortie</h4></i>
                         </a></li>
-                    <li><a href="">
-                            <i class="fas fa-cookie-bite"><h4 class="muted">Manger</h4></i>
+                        <li><a href="">
+                            <i class="fas fa-cookie-bite"><h4 class="muted">Restauration</h4></i>
                         </a></li>
-                    <li><a href="">
-                            <i class="fas fa-book"><h4 class="muted">S'instruire</h4></i>
+                        <li><a href="">
+                            <i class="fas fa-book"><h4 class="muted">Culture</h4></i>
                         </a></li>
                     <li><a href="">
                             <i class="fas fa-bicycle"><h4 class="muted">Sport</h4></i>

@@ -54,12 +54,14 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#"><img src="img/logoTest.png" data-active-url="img/logoTest-Active.png"
-                                                  alt="" style="width: 210px; height: 56px;"></a>
+                                                  alt="" style="width: 254px; height: 67px;"></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right main-nav">
-                <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Se connecter</a></li>
+            <ul class="nav navbar-nav navbar-right main-nav user">
+                <li><a href="">
+                    <i class="far fa-user"><h5 class="white" style="float:left;">Nicolas Asri</h5></i>
+                </a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -80,8 +82,7 @@
                 <div class="choix">
                     <div class="col-md-12 text-center">
                         <div class="bouton1">
-                            <a href="#" data-toggle="modal" data-target="#modal1" class="btn2 btn-blue">Proposer une
-                                activité !</a>
+                            <a href="#" data-toggle="modal" data-target="#modal1" class="btn2 btn-blue">Proposer une activité !</a>
                         </div>
                         <h3 class="light white"> - ou - </h3>
                         <div class="bouton1">
@@ -104,7 +105,7 @@
                         <li><a href="">
                             <i class="fas fa-luggage-cart" href=""><h4 class="muted">Voyage</h4></i>
                         </a></li>
-                    <li><a href="">
+                        <li><a href="">
                             <i class="far fa-building"><h4 class="muted">Hebergement</h4></i>
                         </a></li>
                         <li><a href="">
@@ -148,11 +149,6 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 text-center-mobile">
-                <h3 class="white">Reserve a Free Trial Class!</h3>
-                <h5 class="light regular light-white">Shape your body and improve your health.</h5>
-                <a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>
-            </div>
         </div>
         <div class="row bottom-footer text-center-mobile">
             <div class="col-sm-8">

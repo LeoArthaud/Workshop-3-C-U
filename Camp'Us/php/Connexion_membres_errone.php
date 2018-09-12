@@ -7,7 +7,7 @@ unset($_SESSION['id_user']);
 
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+  <head>    ²
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="CSS/bootstrap.css">

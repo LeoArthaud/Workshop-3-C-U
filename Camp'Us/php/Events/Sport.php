@@ -18,15 +18,15 @@ require("../Connexion.php");
 
 <?php
 
-$req = $bdd->prepare('SELECT titre FROM Event WHERE categorie = "sport" ');
-$req->execute(array($_GET['Event']));
+$event = 'sport';
+$req = $bdd->prepare('SELECT titre FROM Event WHERE categorie = ? ');
+$req->execute(array($event));
 $contenu = $req->fetch();
 
-
-while ($req->fetch()) {
+foreach ($contenu as $value) {
     ?>
     <p>
-        <strong> <a href="Show_Event.php"><?php echo htmlspecialchars($contenu['titre']); ?></strong></a><br>
+        <strong> <a href="../Show_Event.php"><?php echo htmlspecialchars($contenu['titre']); ?></strong></a><br>
     </p>
 
     <?php

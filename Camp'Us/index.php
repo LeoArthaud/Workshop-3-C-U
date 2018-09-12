@@ -76,7 +76,7 @@
                     <div class="col-md-12 text-center">
                         <h1 class="white typed">Bienvenue sur Camp'Us Grenoble !</h1>
                         <span class="typed-cursor">|</span>
-                        <h3 class="light white">Rencontre les gens de ton campus !</h3>
+                        <h3 class="light white"><?php echo $_SESSION ?></h3>
                     </div>
                 </div>
                 <div class="choix">

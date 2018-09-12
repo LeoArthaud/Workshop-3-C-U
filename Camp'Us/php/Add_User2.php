@@ -54,7 +54,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#"><img src="img/logoTest.png" data-active-url="img/logoTest-Active.png"
-                                                  alt="" style="width: 180px; height: 60px;"></a>
+                                                  alt="" style="width: 254px; height: 67px;"></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -72,13 +72,38 @@
     <div class="container">
         <div class="table">
             <div class="header-text">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h1 class="white typed">Bienvenue sur Camp'Us Grenoble !</h1>
-                        <span class="typed-cursor">|</span>
-                        <h3 class="light white">Rencontre les gens de ton campus !</h3>
-                    </div>
-                </div>
+
+                
+                
+                
+                <form action="Add_User_POST.php" method="POST">
+    <p>
+        <label for="nom"> Nom * </label> : <input type="text" name="nom" id="nom"> <br>
+        <label for="prenom"> Prénom * </label> : <input type="text" name="prenom" id="prenom"> <br>
+        <label for="email"> Adresse e-mail * </label> : <input type="text" name="email" id="email"> <br>
+        <label for="mdp"> Mot de passe * </label> : <input type="password" name="mdp"> <br>
+        <label for="promo"> Promo * </label> :
+        <select name="promo" id="promo">
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+            <option value="B3">B3</option>
+            <option value="I4">I4</option>
+            <option value="I5">I5</option>
+        </select> <br>
+        <label for="infos"> Présentez-vous </label> : <input type="text" name="infos" id="infos"
+                                                             placeholder="centres d'intérêts, hobbies, etc... "> <br>
+
+        <input type="submit" value="C'est parti!">
+    </p>
+</form>
+                
+                
+                
+                
+                
+                
+                
+                
                 <div class="choix">
                     <div class="col-md-12 text-center">
                         <div class="bouton1">

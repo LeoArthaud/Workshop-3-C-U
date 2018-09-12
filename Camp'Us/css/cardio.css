@@ -176,7 +176,7 @@ nav.navbar .navbar-nav li.active a:not(.btn) {
 nav.navbar-fixed-top {
 	z-index: 9499;
 	top: 0;
-	padding: 20px 0;
+	padding: 10px 0;
 	opacity: 0;
 	background: #271549;
     background-image: url('../img/headerbar.png');
@@ -1272,6 +1272,33 @@ footer .social-footer li:hover a {
 	}
 }
 
+.formInscription{
+    width: 500px;
+    margin: auto;
+}
+
+.formInscription form label{
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #1c0c37;
+}
+
+.formInscription form input{
+    width: 100%;
+}
+.formInscription form select{
+    width: 100%;
+}
+
+.submit{
+    border: 2px solid #FDCE37;
+    transition: all 1s ease;
+}
+
+.submit:hover{
+    box-shadow: inset 0 100px 0 0px rgba(253,206,55,1);
+}
 
 
 

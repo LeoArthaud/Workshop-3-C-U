@@ -46,14 +46,13 @@
 </div>
 
     <div class="navInscription">
-         <img src="../img/logoTest.png" alt="Preloader image" style="width: 175px; height: 75px;">
+         <a href=""><img src="../img/logoTest.png" alt="Preloader image" style="width: 175px; height: 75px;"></a>
     </div>
 
     <header id="intro" style="background:url(../img/backBlanc.png); background-size: cover;">
     <div class="container">
         <div class="table">
             <div class="header-text">
-                <div class="choix">
                     <div class="col-md-12 text-center">
                         
                         <h3 class="blue">INSCRIPTION</h3>
@@ -84,13 +83,29 @@
                         
                         
                     </div>
-				</div>
 			</div>
 		</div>
         </div>
 	</header>
       
-    
+    <footer>
+    <div class="container">
+        <div class="row">
+        </div>
+        <div class="row bottom-footer text-center-mobile">
+            <div class="col-sm-8">
+                <p>&copy; 2018 All Rights Reserved. Powered by Team D-lice</p>
+            </div>
+            <div class="col-sm-4 text-right text-center-mobile">
+                <ul class="social-footer">
+                    <li><i class="fa fa-facebook" style="font-size: 24px; color: #fff;"></i></li>
+                    <li><i class="fa fa-twitter" style="font-size: 24px; color: #fff;"></i></li>
+                    <li><i class="fa fa-google-plus" style="font-size: 24px; color: #fff;"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 <!-- Scripts -->
 <script src="../js/jquery-1.11.1.min.js"></script>
 <script src="../js/owl.carousel.min.js"></script>

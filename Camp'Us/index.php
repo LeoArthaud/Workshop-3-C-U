@@ -65,7 +65,7 @@ require("php/Connexion.php");
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right main-nav user">
-                <li><a href="">
+                <li><a href="#" data-toggle="modal" data-target="#modal2">
                     <i class="far fa-user"><h5 class="white" style="float:left;"><?php echo $_SESSION['prenom'] ?></h5></i>
                 </a></li>
             </ul>
@@ -80,7 +80,7 @@ require("php/Connexion.php");
             <div class="header-text">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h1 class="white typed">Bienvenue sur Camp'Us Grenoble !</h1>
+                        <h1 class="white light typed">Bienvenue sur Camp'Us Grenoble !</h1>
                         <span class="typed-cursor">|</span>
                         <h3 class="light white"><?php echo $_SESSION['prenom'] ?></h3>
                     </div>
@@ -145,13 +145,28 @@ require("php/Connexion.php");
                 <input type="text" class="form-control form-white" name='email' placeholder="Adresse E-mail">
                 <input type="text" class="form-control form-white" name='mdp' placeholder="Mot de passe">
                 <div class="inscription-line">
-                    <label for="squaredOne"><span>Toujours pas de compte ? <strong> <a href="php/Add_User.php"> S'inscrire </a></strong></span></label>
+                    <label for="squaredOne"><span>Toujours pas de compte ? <strong> <a href="php/Add_User.php"><font color="#FDCE37">S'inscrire</font></a></strong></span></label>
                 </div>
                 <button type="submit" class="btn btn-submit">Se connecter</button>
             </form>
         </div>
     </div>
 </div>
+    
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-popup">
+            <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+            <div class="user2">
+            <i class="far fa-user"><h5 class="white" style="float:left;"></h5></i>
+            <h4 class="white"><?php echo $_SESSION['prenom'] ?></h4>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    
+    
 <footer>
     <div class="container">
         <div class="row">

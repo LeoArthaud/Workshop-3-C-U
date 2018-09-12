@@ -15,12 +15,6 @@ if (isset($_POST['nom']) AND !empty($_POST['nom']) AND
     $salt = "W0rksh0pe-3_M@achA/NiCoLAs\l'e-au/Y@aZiD'";
     $unHahedPass = $_POST['mdp'];
     $unHahedPassPlusSalt = $salt . $unHahedPass;
-    //$hashedPass = hash('sha512', $unHahedPassPlusSalt);
-
-    /*$options = [
-        'cost' => 10,
-    ];
-    $hashedPass = password_hash( $unHahedPassPlusSalt, PASSWORD_BCRYPT, $options);*/
     $hashedPass = hash('sha512', $unHahedPassPlusSalt);
 
     $req = $bdd->prepare("INSERT INTO User (nom, prenom, email, mdp, promo, infos) VALUES(?, ?, ?, ?, ?, ?)");

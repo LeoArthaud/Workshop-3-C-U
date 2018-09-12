@@ -108,25 +108,25 @@ require("php/Connexion.php");
             <div class="categChoix">
                 <div class="col-sm-12 text-center text-center-mobile">
                     <ul class="categ" id="choixCateg">
-                        <li><a href="">
+                        <li><a href="php/Events/Voyager.php">
                             <i class="fas fa-luggage-cart" href=""><h4 class="muted">Voyage</h4></i>
                         </a></li>
-                        <li><a href="">
+                        <li><a href="php/Events/SeLoger.php">
                             <i class="far fa-building"><h4 class="muted">Hebergement</h4></i>
                         </a></li>
-                        <li><a href="">
+                        <li><a href="php/Events/Sortir.php">
                             <i class="fas fa-beer"><h4 class="muted">Sortie</h4></i>
                         </a></li>
-                        <li><a href="">
+                        <li><a href="php/Events/Restauration.php">
                             <i class="fas fa-cookie-bite"><h4 class="muted">Restauration</h4></i>
                         </a></li>
-                        <li><a href="">
+                        <li><a href="php/Events/Culture.php">
                             <i class="fas fa-book"><h4 class="muted">Culture</h4></i>
                         </a></li>
-                    <li><a href="">
+                    <li><a href="php/Events/Sport.php">
                             <i class="fas fa-bicycle"><h4 class="muted">Sport</h4></i>
                         </a></li>
-                    <li><a href="">
+                    <li><a href="php/Events/Bonsplans.php">
                             <i class="fas fa-tag"><h4 class="muted">Bons plans</h4></i>
                         </a></li>
                 </ul>

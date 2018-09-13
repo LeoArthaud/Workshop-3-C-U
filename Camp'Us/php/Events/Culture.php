@@ -12,28 +12,24 @@ require("../Connexion.php");
 </head>
 	<body>
 
-		<p> 
+		<p>
 			<h1>Voici la liste des évènements dans la catégorie <strong>Culture</strong></h1>
 		</p>
 
-<?php
+    <?php
 
-$req = $bdd->prepare('SELECT titre FROM Event WHERE categorie = "culture" ');
-$req->execute(array($_GET['Event']));
-$contenu = $req->fetch();
+    $req = $bdd->query("SELECT titre FROM Event WHERE categorie = 'culture' ");
 
 
+    while ($contenu= $req->fetch()) {
+        ?>
+        <p>
+            <strong> <a href="../Show_Event.php"><?php echo htmlspecialchars($contenu['titre']); ?></strong></a><br>
+        </p
 
-while ($req->fetch())
-{ 
-?>
-		<p>
-			<strong> <a href="Show_Event.php"><?php echo htmlspecialchars($contenu['titre']);?></strong></a><br>
-		</p>
-
-<?php
-};
-?>
+        <?php
+    }
+    ?>
 
 	</body>
 </html>

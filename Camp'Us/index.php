@@ -136,9 +136,9 @@ require("php/Connexion.php");
     <div class="cut"></div>
     </section>
 
-    
-<!--POPUP CONNEXION  -->  
-    
+
+<!--POPUP CONNEXION  -->
+
 <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content modal-popup">
@@ -155,9 +155,9 @@ require("php/Connexion.php");
         </div>
     </div>
 </div>
-    
+
 <!--POPUP PROFIL    -->
-    
+
 <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content modal-popup">
@@ -166,28 +166,28 @@ require("php/Connexion.php");
                 <i class="far fa-user"><h5 class="white" style="float:left;"></h5></i>
                 <h4 class="white"><?php echo $_SESSION['prenom'] ?></h4>
             </div>
-            <a href="php/Session_Destroy.php"><div class="user3">   
+            <a href="php/Session_Destroy.php"><div class="user3">
                 <i class="fas fa-sign-out-alt"></i>
-                <h5 class="white light">déconnexion</h5> 
+                <h5 class="white light">déconnexion</h5>
             </div></a>
         </div>
     </div>
 </div>
-    
-    
+
+
 <!--POPUP EVENEMENT-->
-     
-    
+
+
  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content modal-popup" style="background:url(img/popupBlanc.png); padding: 70px 0px; ">
             <a href="#" class="close-link"><i class="blue icon_close_alt2"></i></a>
             <h2 class="blue">Ajouter un évenement</h2>
             <img src="img/ornement.png" style="padding-bottom: 20px;">
-            
-            
+
+
             <div class="formEvent">
-            <form method='POST' action='Add_Event_POST.php'>
+            <form method='POST' action='php/Add_Event_POST.php'>
 
             <label for="titre"> Titre </label><input type="text" name="titre" id="titre" placeholder="inscrivez-ici le titre de votre annonce"> <br>
 
@@ -207,24 +207,20 @@ require("php/Connexion.php");
             <label for="lieu"> Lieu </label><input type="text" name="lieu" id="lieu"> <br>
             <label for="description"> Description </label><input type="text" name="description" id="description" placeholder="Parlez un peu de ce que vous comptez faire..."> <br>
             <input type="submit" value="GO !" class="bold goBouton">
-            
         </form>
             </div>
-            
-            
-            
         </div>
     </div>
-</div>   
-    
-    
-    
-    
-    
-    
-    
-    
-    
+</div>
+
+
+
+
+
+
+
+
+
 <footer>
     <div class="container">
         <div class="row">

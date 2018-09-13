@@ -46,12 +46,11 @@ require("../Connexion.php");
     <!-- Main style -->
     <link rel="stylesheet" type="text/css" href="../../css/cardio.css">
 </head>
-      
-    
+
+
 <?php
 
 	$ntm = $_SESSION['prenom'];
-
 	$req = $bdd->prepare('SELECT nom, prenom, promo, email, infos FROM User WHERE prenom = ?');
 	$req->execute(array($ntm));
 	$donnees = $req->fetch();
@@ -88,15 +87,15 @@ require("../Connexion.php");
     <!-- /.container-fluid -->
 </nav>
 
-    
-    
+
+
     <div class="banniere">
     <div class="col-md-12 text-center">
                         <h1 class="white light typed">Prêt à faire un peu de <strong>Sport</strong> ?</h1>
                         <span class="typed-cursor">|</span>
     </div>
     </div>
-    
+
 	<section id="services" class="section section-padded">
 		<div class="container">
 			<div class="row text-center title">
@@ -106,28 +105,28 @@ require("../Connexion.php");
             <div class="categChoix">
                 <div class="col-sm-12 text-center text-center-mobile">
 
-                    
+
                                     <div class="post">
-                
+
 
                     <?php
 
-                    $req = $bdd->query("SELECT titre FROM Event WHERE categorie = 'sport' ");
+                    $req = $bdd->query("SELECT titre, id_event FROM Event WHERE categorie = 'sport' ");
 
 
                     while ($contenu= $req->fetch()) {
                         ?>
                         <p>
-                            <strong> <a href="../Show_Event.php"><?php echo htmlspecialchars($contenu['titre']); ?></strong></a><br>
+                            <strong> <a href="../Show_Event.php?id=<?php echo ($contenu['id_event'] .'"">'. htmlspecialchars($contenu['titre']));?></strong></a><br>
                         </p>
 
                         <?php
                     }
                     ?>
- 
+
 				</div>
-                    
-                    
+
+
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -36,7 +36,7 @@
 	<link rel="stylesheet" type="text/css" href="css/cardio.css">
 </head>
 
-<body scroll="no" style="overflow: hidden">
+<body>
 	<div class="preloader">
 		<img src="img/loader.gif" alt="Preloader image">
 	</div>
@@ -50,7 +50,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="img/logoTest.png" data-active-url="img/logoTest-Active.png" alt="" style="width: 200px; height: 67px;"></a>
+				<a class="navbar-brand" href="#"><img src="img/logoTest.png" data-active-url="img/logoTest-Active.png" alt="" style="width: 210px; height: 56px;"></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -62,36 +62,78 @@
 		</div>
 		<!-- /.container-fluid -->
 	</nav>
-	<header id="intro" style="background:url(img/lyon.jpg); background-size: cover;">
+	<header id="intro">
 		<div class="container">
 			<div class="table">
 				<div class="header-text">
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<h1 class="white typed">Bienvenue sur Camp'Us !</h1>
+							<h1 class="white typed">Bienvenue sur Camp'Us Grenoble !</h1>
                             <span class="typed-cursor">|</span>
-                            <h3 class="light white">Connectes toi pour découvrir les activités de ton campus !</h3>
+                            <h3 class="light white">Rencontre les gens de ton campus !</h3>
 						</div>
 					</div>
                     <div class="choix">
                         <div class="col-md-12 text-center">
                             <div class="bouton1">
-					           <a href="#" data-toggle="modal" data-target="#modal1" class="btn2 btn-blue">Se connecter !</a>
+					           <a href="#" data-toggle="modal" data-target="#modal1" class="btn2 btn-blue">Proposer une activité !</a>
+                            </div>
+                            <h4 class="light white"> - ou - </h4>
+                            <div class="bouton1">
+					           <a href="#" data-toggle="modal" data-target="#modal1" class="btn2 btn-blue">Rejoindre quelqu'un !</a>
                             </div>
                         </div>
                     </div>
 				</div>
 			</div>
 		</div>
-	</header>	
+	</header>
+	<section id="services" class="section section-padded">
+		<div class="container">
+			<div class="row text-center title">
+				<h2>Rejoins des gens !</h2>
+				<h4 class="light muted">Choisis l'activité de ton choix et découvre qui de ton campus veut faire de même !</h4>
+			</div>
+            <div class="categChoix">
+                <div class="col-sm-12 text-center text-center-mobile">
+                    <ul class="categ">
+                        <div class="categBouton">
+                            <li><i class="fas fa-car"></i></li>
+                        </div>
+                        <div class="categBouton">
+                            <li><i class="fas fa-hotel"></i></li>
+                        </div>
+                        <div class="categBouton">
+                            <li><i class="fas fa-beer"></i></li>
+                        </div>
+                        <div class="categBouton">
+                            <li><i class="fas fa-cookie-bite"></i></li>
+                        </div>
+                        <div class="categBouton">
+                            <li><i class="fas fa-book"></i></li>
+                        </div>
+                        <div class="categBouton">
+                            <li><i class="fas fa-bicycle"></i></li>
+                        </div>
+                        <div class="categBouton">
+                            <li><i class="fas fa-tag"></i></li>
+                        </div>
+                        
+                    </ul>
+                </div>
+            </div>    
+		</div>
+		<div class="cut"></div>
+	</section>
+	
 	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content modal-popup">
 				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
 				<h3 class="white">Connexion</h3>
-				<form action="php/Connexion_User.php" method='POST' class="popup-form">
-					<input type="text" class="form-control form-white" name='email' placeholder="Adresse E-mail">
-					<input type="text" class="form-control form-white" name='mdp' placeholder="Mot de passe">
+				<form action="Connexion_User.php" class="popup-form">
+					<input type="text" class="form-control form-white" placeholder="Adresse E-mail">
+					<input type="text" class="form-control form-white" placeholder="Mot de passe">
                         <div class="inscription-line">
 							<label for="squaredOne"><span>Toujours pas de compte ? <strong> <a href="php/Add_User.php"> S'inscrire </a></strong></span></label>
                         </div>
@@ -100,7 +142,29 @@
 			</div>
 		</div>
 	</div>
-
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 text-center-mobile">
+					<h3 class="white">Reserve a Free Trial Class!</h3>
+					<h5 class="light regular light-white">Shape your body and improve your health.</h5>
+					<a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>
+				</div>
+			</div>
+			<div class="row bottom-footer text-center-mobile">
+				<div class="col-sm-8">
+					<p>&copy; 2018 All Rights Reserved. Powered by Team D-lice</p>
+				</div>
+				<div class="col-sm-4 text-right text-center-mobile">
+					<ul class="social-footer">
+						<li><i class="fa fa-facebook" style="font-size: 24px; color: #fff;"></i></li>
+						<li><i class="fa fa-twitter" style="font-size: 24px; color: #fff;"></i></li>
+						<li><i class="fa fa-google-plus" style="font-size: 24px; color: #fff;"></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<!-- Holder for mobile navigation -->
 	<div class="mobile-nav">
 		<ul>

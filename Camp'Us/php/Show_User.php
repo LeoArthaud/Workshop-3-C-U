@@ -1,10 +1,7 @@
 <?php
 	session_start();
-	require("Verif-connexion.php");
 	require ("Connexion.php");
 	require ("Check_Session.php");
-	
-
 ?>
 
 <!DOCTYPE html>
@@ -15,11 +12,10 @@
 
 
 <?php
-	$req = $bdd->prepare('SELECT * FROM User WHERE id_user = ?');
-	$req->execute(array($_SESSION['id_user']));
+	$req = $bdd->prepare('SELECT * FROM User WHERE prenom = ?');
+	$req->execute(array($_SESSION['prenom']));
 
   	$donnees = $req->fetch();
-  	var_dump($donnees);
  ?>
 
 	<body>

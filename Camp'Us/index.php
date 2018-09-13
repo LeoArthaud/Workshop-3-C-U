@@ -180,7 +180,7 @@ require("php/Connexion.php");
     
  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content modal-popup" style="background:url(img/popupBlanc.png); padding: 70px 30px; ">
+        <div class="modal-content modal-popup" style="background:url(img/popupBlanc.png); padding: 70px 0px; ">
             <a href="#" class="close-link"><i class="blue icon_close_alt2"></i></a>
             <h2 class="blue">Ajouter un évenement</h2>
             <img src="img/ornement.png" style="padding-bottom: 20px;">
@@ -189,9 +189,9 @@ require("php/Connexion.php");
             <div class="formEvent">
             <form method='POST' action='Add_Event_POST.php'>
 
-            <label for="titre"> Titre <font color="#FDCE37">*</font> </label> : <input type="text" name="titre" id="titre" placeholder="inscrivez-ici le titre de votre annonce"> <br>
+            <label for="titre"> Titre </label><input type="text" name="titre" id="titre" placeholder="inscrivez-ici le titre de votre annonce"> <br>
 
-            <label for="categorie"> Catégorie <font color="#FDCE37">*</font> </label> :
+            <label for="categorie"> Catégorie </label>
                     <select name="categorie" id="categorie">
                         <option value="voyager">Voyager</option>
                         <option value="loger">Loger</option>
@@ -202,11 +202,12 @@ require("php/Connexion.php");
                         <option value="bonsplans">Bons plans</option>
                     </select> <br>
 
-            <label for="datev"> Date de l'évènement <font color="#FDCE37">*</font> </label> : <input type="text" name="datev" id="datev"> <br>
-            <label for="heure"> Heure <font color="#FDCE37">*</font> </label> : <input type="text" name="heure" id="heure"> <br>
-            <label for="lieu"> Lieu <font color="#FDCE37">*</font> </label> : <input type="text" name="lieu" id="lieu"> <br>
-            <label for="description"> Description <font color="#FDCE37">*</font> </label> : <input type="text" name="description" id="description" placeholder="Parlez un peu de ce que vous comptez faire..."> <br>
-            <input type="submit" value="GO!" class="btn btn-blue submit">
+            <label for="datev"> Date de l'évènement </label><input type="text" name="datev" id="datev"> <br>
+            <label for="heure"> Heure </label><input type="text" name="heure" id="heure"> <br>
+            <label for="lieu"> Lieu </label><input type="text" name="lieu" id="lieu"> <br>
+            <label for="description"> Description </label><input type="text" name="description" id="description" placeholder="Parlez un peu de ce que vous comptez faire..."> <br>
+            <input type="submit" value="GO !" class="bold goBouton">
+            
         </form>
             </div>
             

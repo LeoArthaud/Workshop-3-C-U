@@ -71,7 +71,7 @@ require("../Connexion.php");
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="../../img/logoTest.png" data-active-url="../../img/logoTest-Active.png"
+            <a class="navbar-brand" href="../../index.php"><img src="../../img/logoTest.png" data-active-url="../../img/logoTest-Active.png"
                                                   alt="" style="width: 180px; height: 60px;"></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -86,49 +86,56 @@ require("../Connexion.php");
     </div>
     <!-- /.container-fluid -->
 </nav>
-
-
+    
 
     <div class="banniere">
-    <div class="col-md-12 text-center">
-                        <h1 class="white light typed">Prêt à faire un peu de <strong>Sport</strong> ?</h1>
-                        <span class="typed-cursor">|</span>
-    </div>
+        <div class="col-md-12 text-center ouioui">
+            <h1 class="white light typed ouiouioui">Prêt à faire un peu de <strong>Sport</strong> ?</h1>
+            <span class="typed-cursor">|</span>
+        </div>
     </div>
 
+    
 	<section id="services" class="section section-padded">
 		<div class="container">
 			<div class="row text-center title">
-				<h2>Rejoins des gens !</h2>
-				<h4 class="light muted">Choisis l'activité de ton choix et découvre qui de ton campus veut faire de même !</h4>
+				<h2>Rejoins les :</h2>
+                <img src="../../img/ornement.png" style="padding-bottom: 20px;">
 			</div>
-            <div class="categChoix">
-                <div class="col-sm-12 text-center text-center-mobile">
-
-
-                                    <div class="post">
-
-
+            <div class="triCateg">
+            
                     <?php
-
-                    $req = $bdd->query("SELECT titre, id_event FROM Event WHERE categorie = 'sport' ");
-
-
+                    $req = $bdd->query("SELECT titre FROM Event WHERE categorie = 'sport' ");
                     while ($contenu= $req->fetch()) {
                         ?>
+            
+                       
+                <div class="hexagon degrade admission">
+                        <div class="triangle-top"> 
+                </div>
+                <div class="post">
+            
+            
+                    <div class="scrib">
+                    <img src="../../img/fleche1.png">
                         <p>
-                            <strong> <a href="../Show_Event.php?id=<?php echo ($contenu['id_event'] .'"">'. htmlspecialchars($contenu['titre']));?></strong></a><br>
+                            <strong> <a href="../Show_Event.php"><?php echo htmlspecialchars($contenu['titre']); ?></strong></a>
                         </p>
-
+                    <img src="../../img/fleche2.png">
+                    </div>
+                    </div> 
+                    <div class="triangle-bottom"> 
+                </div> 
+                </div>
                         <?php
                     }
                     ?>
-
-				</div>
-
-
-                </div>
+                    
+                    
+                    
+                                        
             </div>
+           
         </div>
     </section>
 

@@ -15,8 +15,9 @@ if (isset($_POST['titre']) AND !empty($_POST['titre']) AND
 
     //c'est l'insertion de la catégorlie dou délice :oui:
 
-    $req = $bdd->prepare("INSERT INTO Event (titre, datev, categorie, heure, lieu, description) VALUES (?, ?, ?, ?, ?, ?)");
+    $req = $bdd->prepare("INSERT INTO Event (id_launcher, titre, datev, categorie, heure, lieu, description) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $req->execute(array(
+        $_SESSION['id_user'],
         $_POST['titre'],
         $_POST['datev'],
         $_POST['categorie'],

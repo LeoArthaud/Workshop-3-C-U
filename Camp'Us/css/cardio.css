@@ -1369,9 +1369,20 @@ footer .social-footer li:hover a {
 
 .formInscription form input{
     width: 100%;
+    border-width:  0 0 2px 0;
+    border-color: rgba(39,21,73,.2);
+    height: 40px;
+    font-size: 20px;
+    color: rgba(39,21,73,.8);
+    transition: all .3s ease;
 }
 .formInscription form select{
     width: 100%;
+}
+
+.formInscription form input[type=text]:focus {
+    outline: none;
+    border-color: rgba(39,21,73,.7);
 }
 
 

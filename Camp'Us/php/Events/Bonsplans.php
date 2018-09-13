@@ -46,8 +46,8 @@ require("../Connexion.php");
     <!-- Main style -->
     <link rel="stylesheet" type="text/css" href="../../css/cardio.css">
 </head>
-      
-    
+
+
 <?php
 
 	$ntm = $_SESSION['prenom'];
@@ -87,7 +87,7 @@ require("../Connexion.php");
     </div>
     <!-- /.container-fluid -->
 </nav>
-    
+
 
     <div class="banniere">
         <div class="col-md-12 text-center ouioui">
@@ -96,7 +96,7 @@ require("../Connexion.php");
         </div>
     </div>
 
-    
+
 	<section id="services" class="section section-padded">
 		<div class="container">
 			<div class="row text-center title">
@@ -104,41 +104,41 @@ require("../Connexion.php");
                 <img src="../../img/ornement.png" style="padding-bottom: 20px;">
 			</div>
             <div class="triCateg">
-                
-                
-            
-                    <?php
-                    $req = $bdd->query("SELECT titre FROM Event WHERE categorie = 'bonsplans' ");
-                    while ($contenu= $req->fetch()) {
-                        ?>
-            
-                       
-                <div class="hexagon degrade admission">
-                        <div class="triangle-top"> 
-                </div>
-                <div class="post">
-            
-            
-                    <div class="scrib">
-                    <img src="../../img/fleche1.png">
-                        <p>
-                            <strong> <a href="../Show_Event.php"><?php echo htmlspecialchars($contenu['titre']); ?></strong></a><br>
-                        </p>
-                    <img src="../../img/fleche2.png">
-                    </div>
-                    </div> 
-                    <div class="triangle-bottom"> 
-                </div> 
-                </div>
-                        <?php
-                    }
-                    ?>
-                    
-                    
-                    
-                                        
+
+
+
+              <?php
+              $req = $bdd->query("SELECT titre, id_event FROM Event WHERE categorie = 'sport' ");
+              while ($contenu= $req->fetch()) {
+                  ?>
+
+
+          <div class="hexagon degrade admission">
+                  <div class="triangle-top">
+          </div>
+          <div class="post">
+
+
+              <div class="scrib">
+              <img src="../../img/fleche1.png">
+                  <p>
+                      <strong> <a href="../Show_Event.php?id=<?php echo $contenu['id_event'];?>"><?php echo htmlspecialchars($contenu['titre']);?></strong></a><br>
+                  </p>
+              <img src="../../img/fleche2.png">
+              </div>
+              </div>
+              <div class="triangle-bottom">
+          </div>
+          </div>
+                  <?php
+              }
+              ?>
+
+
+
+
             </div>
-           
+
         </div>
     </section>
 
@@ -280,4 +280,3 @@ require("../Connexion.php");
 </body>
 
 </html>
-

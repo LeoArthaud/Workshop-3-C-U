@@ -17,15 +17,14 @@ require("../Connexion.php");
 </p>
 
 <?php
-
-$req = $bdd->query("SELECT titre FROM Event WHERE categorie = 'sport' ");
+$req = $bdd->query("SELECT titre, id_event FROM Event WHERE categorie = 'sport' ");
 
 
 while ($contenu= $req->fetch()) {
     ?>
     <p>
-        <strong> <a href="../Show_Event.php"><?php echo htmlspecialchars($contenu['titre']); ?></strong></a><br>
-    </p
+        <strong> <a href="../Show_Event.php?id=<?php echo ($contenu['id_event'] .'"">'. htmlspecialchars($contenu['titre']));?></strong></a><br>
+    </p>
 
     <?php
 }

@@ -17,9 +17,12 @@ require("Connexion.php");
 
         <!-- On récupère les infos de l'event-->
         <?php
-        $req = $bdd->prepare('SELECT titre, datev, heure, description FROM Event WHERE event='.$_POST['event']);
-        $req->execute(array($_GET['Event']));
-        $contenu = $req->fetch();
+        /*$req = $bdd->prepare('SELECT titre, datev, heure, description FROM Event WHERE event='.$_POST['event']);
+        $req->execute(array($_GET['event']));*/
+        $idevent=$_GET['id'];
+        $req = $bdd->prepare("SELECT * FROM Event WHERE id_event = '$idevent' ");
+        $req->execute(array($idevent));
+        $contenu=$req->fetch();
         ?>
 
     <h2><?php echo $contenu['titre'] ?></h2>
@@ -29,20 +32,17 @@ require("Connexion.php");
     à
     <?php echo htmlspecialchars($contenu['heure']); ?> <br>
     Pour
-    <?php echo htmlspecialchars($contenu['description']); ?>
-
+    <?php echo htmlspecialchars($contenu['description']); ?><br>
 
     <!-- On récupère les infos du mec qui lance l'event-->
     <?php
-    $req = $bdd->prepare("SELECT nom, prenom FROM User WHERE User'.'id_user = Event'.'id_launcher");
-    $req->execute(array($_GET['AuteurEvent']));
-    $auteur = $req->fetch();
+    $req = $bdd->query("SELECT nom, prenom FROM User WHERE id_user='$idevent' ");
+    while($auteur = $req->fetch()){
     ?>
 
     Proposé par
     <?php echo htmlspecialchars($auteur['prenom']); ?>
-    <?php echo htmlspecialchars($auteur['nom']); ?> <br>
-
+    <?php echo htmlspecialchars($auteur['nom']); }?> <br>
     </p>
 </div>
 

@@ -40,7 +40,6 @@
 		<?php echo $donnees['infos']; ?> <br>
 
 		<a href="Modify_User.php">Modifier</a>
-		<a href="Session_Destroy.php">DESTROY</a>
 
 		</p>
 

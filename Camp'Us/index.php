@@ -202,7 +202,7 @@ require("php/Connexion.php");
                         <option value="bonsplans">Bons plans</option>
                     </select> <br>
 
-            <label for="datev"> Date de l'évènement </label><input type="text" name="datev" id="datev"> <br>
+            <label for="datev"> Date de l'évènement </label><input type="text" name="datev" id="datev" placeholder="jj/mm/aaaa"> <br>
             <label for="heure"> Heure </label><input type="text" name="heure" id="heure"> <br>
             <label for="lieu"> Lieu </label><input type="text" name="lieu" id="lieu"> <br>
             <label for="description"> Description </label><input type="text" name="description" id="description" placeholder="Parlez un peu de ce que vous comptez faire..."> <br>

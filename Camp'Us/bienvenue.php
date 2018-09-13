@@ -55,7 +55,9 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right main-nav">
-					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Se connecter</a></li>
+                    <div class="bouton1">
+					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn2 btn-blue">Se connecter</a></li>
+                    </div>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
@@ -93,7 +95,7 @@
 					<input type="text" class="form-control form-white" name='email' placeholder="Adresse E-mail">
 					<input type="text" class="form-control form-white" name='mdp' placeholder="Mot de passe">
                         <div class="inscription-line">
-							<label for="squaredOne"><span>Toujours pas de compte ? <strong> <a href="php/Add_User.php"> S'inscrire </a></strong></span></label>
+							<label for="squaredOne"><span>Toujours pas de compte ? <strong> <a href="php/Add_User.php"> <font color="#FDCE37">S'inscrire</font> </a></strong></span></label>
                         </div>
 					<button type="submit" class="btn btn-submit">Se connecter</button>
 				</form>

@@ -5,10 +5,11 @@ require("Connexion.php");
 require("Check_Session.php");
 
 $commenter = $_SESSION['id_user'];
-$event = $_GET['id_event'];
+$event = $_SESSION['idevent'];
+$contenu = $_POST['content'];
 
-$req = $bdd->prepare("INSERT INTO Comment(content,id_commenter) VALUES(?, '$commenter')");
-$req->execute(array($_POST['content'], $commenter, $event));
+$req = $bdd->prepare("INSERT INTO Comment(content,id_commenter,id_event) VALUES('$contenu', '$commenter','$event')");
+$req->execute(array($contenu, $commenter, $event));
 
-header("Location: Show_Event.php");
+header("Location: Show_Event.php"."?id=".$event);
 ?>

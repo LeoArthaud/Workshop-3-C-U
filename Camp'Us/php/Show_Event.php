@@ -17,6 +17,7 @@ require("Connexion.php");
 
         <!-- On récupère les infos de l'event-->
         <?php
+        $_SESSION['idevent']=$_GET['id'];
         /*$req = $bdd->prepare('SELECT titre, datev, heure, description FROM Event WHERE event='.$_POST['event']);
         $req->execute(array($_GET['event']));*/
         $idevent=$_GET['id'];
@@ -58,28 +59,40 @@ require("Connexion.php");
       //  $req->execute(array($idevent));
       //  $commenter = $req->fetch();
         $req->closeCursor();
-        $req = $bdd->prepare("SELECT * FROM Comment WHERE id_event='$idevent' ");
-        $req->execute(array($idevent));
+        $req = $bdd->query("SELECT * FROM Comment WHERE id_event='$idevent' ");
+        //$commentaires=$req->fetch();
+        //var_dump($commentaires);
         //while($auteur = $req->fetch()){
         //$req = $bdd->prepare("SELECT nom, prenom FROM User,Comment WHERE id_user = id_launcher");
         //$req->execute(array($_GET['CommentEvent']));
-        while($commentaires =$req->fetch()){
+        while($commentaires=$req->fetch()){
         ?>
         <strong>
             <?php
             $idcommentaires=$commentaires['id_commenter'];
-            $req = $bdd->prepare("SELECT nom, prenom FROM User WHERE id_user='$idcommentaires' ");
-            $req->execute(array($idcommentaires));
-            $commenter=$req->fetch();
+            $req2 = $bdd->query("SELECT nom, prenom FROM User WHERE id_user='$idcommentaires' ");
+            while ($commenter=$req2->fetch()) {
+
             echo htmlspecialchars($commenter['nom'].' ');
             echo htmlspecialchars($commenter['prenom']);
             ?>
         </strong>
-        à écrit : <br>
-
-        <?php echo htmlspecialchars($commentaires['content']); }?>
+        à écrit : <?php echo htmlspecialchars($commentaires['content']);
+      } ?>
+      <br>
+      <?php } ?>
 
     </p>
+    <?php
+    	echo $_SESSION['prenom'].' '.$_SESSION['nom'];
+    ?>
+
+     <form action="Add_Comment_Post.php" method="POST">
+
+    <input type="textarea" name="content" id="content" placeholder="Laissez un commentaire..."> <br>
+    <input type="submit" value="commentaire">
+
+    </form>
 </div>
 
 </body>

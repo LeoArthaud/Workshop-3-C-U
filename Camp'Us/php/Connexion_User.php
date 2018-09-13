@@ -8,7 +8,7 @@ if (isset($_POST['mdp']) AND !empty($_POST['mdp']) AND
     isset($_POST['email']) AND !empty($_POST['email'])) {
 
 //  Récupération de l'utilisateur et de son mdp hashé
-    $req = $bdd->prepare('SELECT prenom, email, mdp, id_user FROM User WHERE email = ? ');
+    $req = $bdd->prepare('SELECT nom, prenom, email, mdp, id_user FROM User WHERE email = ? ');
     $req->execute(array($email));
     $resultat = $req->fetch();
 
@@ -40,6 +40,7 @@ if (isset($_POST['mdp']) AND !empty($_POST['mdp']) AND
         if ($isPasswordCorrect) {
             session_start();
             $_SESSION['prenom'] = $resultat['prenom'];
+            $_SESSION['nom'] = $resultat['nom'];
             $_SESSION['email'] = $email;
             $_SESSION['id_user']=$resultat['id_user'];
             header('Location: ../index.php');

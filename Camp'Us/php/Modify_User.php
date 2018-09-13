@@ -12,29 +12,38 @@
 
 <?php
 
-	$req = $bdd->prepare('SELECT * FROM User WHERE id_user = ?');
+	$req = $bdd->prepare('SELECT * FROM User WHERE prenom = ?');
 	$req->execute(array($_SESSION['prenom']));
-
   	$donnees = $req->fetch();
 
  ?>
 
 	<body>
 
-	<form action="Data_Change.php">
-	<p>
-		<input type="text" name="prenom" class="form-control" value="<?php echo $donnees['prenom']; ?>" required> <br>
-		<input type="text" name="nom" class="form-control" value="<?php echo $donnees['nom']; ?>" required> <br>
-		<input type="text" name="promo" class="form-control" value="<?php echo $donnees['promo']; ?>" required> <br>
-		<input type="text" name="infos" class="form-control" value="<?php echo $donnees['infos']; ?>" required> <br>
+<p>
+	<form action="Data_Change.php" method="POST">
+	
+	Nom :
+		<input type="text" name="prenom" value="<?php echo $donnees['prenom']; ?>" required> <br>
+
+	Prénom:
+		<input type="text" name="nom" value="<?php echo $donnees['nom']; ?>" required> <br> 
+
+	Promo :
+		<input type="text" name="promo" value="<?php echo $donnees['promo']; ?>" required> <br>
+
+	A propos: 
+		<input type="text" name="infos" value="<?php echo $donnees['infos']; ?>" required> <br>
 
 	Contact :  
-		<input type="text" name="email" class="form-control" value="<?php echo $donnees['email']; ?>" required> <br>
+		<input type="text" name="email" value="<?php echo $donnees['email']; ?>" required> <br>
 		
-		<button type="submit"> Valider</button>
-	</p>
+		<input type="submit" value="Valider">
+
 	</form>	
 
+</p>
 	</body>
 </html>
 
+--

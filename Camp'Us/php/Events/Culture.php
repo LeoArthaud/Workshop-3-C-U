@@ -109,7 +109,7 @@ require("../Connexion.php");
             <div class="triCateg">
 
               <?php
-              $req = $bdd->query("SELECT titre, id_event FROM Event WHERE categorie = 'sport' ");
+              $req = $bdd->query("SELECT titre, id_event FROM Event WHERE categorie = 'culture' ");
               while ($contenu= $req->fetch()) {
                   ?>
 

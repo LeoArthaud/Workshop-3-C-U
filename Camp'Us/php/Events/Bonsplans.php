@@ -108,7 +108,7 @@ require("../Connexion.php");
 
 
               <?php
-              $req = $bdd->query("SELECT titre, id_event FROM Event WHERE categorie = 'sport' ");
+              $req = $bdd->query("SELECT titre, id_event FROM Event WHERE categorie = 'bonsplans' ");
               while ($contenu= $req->fetch()) {
                   ?>
 

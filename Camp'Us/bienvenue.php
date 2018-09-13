@@ -93,7 +93,7 @@
 				<h3 class="white">Connexion</h3>
 				<form action="php/Connexion_User.php" method='POST' class="popup-form">
 					<input type="text" class="form-control form-white" name='email' placeholder="Adresse E-mail">
-					<input type="text" class="form-control form-white" name='mdp' placeholder="Mot de passe">
+					<input type="password" class="form-control form-white" name='mdp' placeholder="Mot de passe">
                         <div class="inscription-line">
 							<label for="squaredOne"><span>Toujours pas de compte ? <strong> <a href="php/Add_User.php"> <font color="#FDCE37">S'inscrire</font> </a></strong></span></label>
                         </div>

@@ -43,6 +43,16 @@ require("php/Connexion.php");
     <!-- Main style -->
     <link rel="stylesheet" type="text/css" href="css/cardio.css">
 </head>
+      
+    
+<?php
+
+	$ntm = $_SESSION['prenom'];
+
+	$req = $bdd->prepare('SELECT nom, prenom, promo, email, infos FROM User WHERE prenom = ?');
+	$req->execute(array($ntm));
+	$donnees = $req->fetch();
+ ?>
 
 <body>
 <div class="preloader">
@@ -82,7 +92,7 @@ require("php/Connexion.php");
                     <div class="col-md-12 text-center">
                         <h1 class="white light typed">Bienvenue sur Camp'Us Grenoble !</h1>
                         <span class="typed-cursor">|</span>
-                        <h3 class="light white"><?php echo $_SESSION['prenom'] ?></h3>
+                        <h3 class="light white"><?php echo $_SESSION['prenom'] ?> <?php echo $donnees['nom']; ?></h3>
                     </div>
                 </div>
                 <div class="choix">
@@ -164,8 +174,26 @@ require("php/Connexion.php");
             <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
             <div class="user2">
                 <i class="far fa-user"><h5 class="white" style="float:left;"></h5></i>
-                <h4 class="white"><?php echo $_SESSION['prenom'] ?></h4>
+                <h4 class="white"><?php echo $_SESSION['prenom'] ?> <?php echo $donnees['nom']; ?></h4>
             </div>
+            <h5 class="white">
+                Promo:
+                <?php echo $donnees['promo']; ?> <br>
+            </h5>
+            <h5 class="white">
+                Email:
+                <?php echo $donnees['email']; ?> <br>
+            </h5>
+            <h5 class="white">
+                A propos:
+                <?php echo $donnees['infos']; ?> <br>
+            </h5>
+
+            <a href="Modify_User.php"><div class="user4">
+                <i class="fas fa-pencil-alt"></i>
+                <h5 class="white light">Modifier</h5>
+            </div></a>
+
             <a href="php/Session_Destroy.php"><div class="user3">
                 <i class="fas fa-sign-out-alt"></i>
                 <h5 class="white light">déconnexion</h5>

@@ -46,12 +46,11 @@ require("../Connexion.php");
     <!-- Main style -->
     <link rel="stylesheet" type="text/css" href="../../css/cardio.css">
 </head>
-      
-    
+
+
 <?php
 
 	$ntm = $_SESSION['prenom'];
-
 	$req = $bdd->prepare('SELECT nom, prenom, promo, email, infos FROM User WHERE prenom = ?');
 	$req->execute(array($ntm));
 	$donnees = $req->fetch();

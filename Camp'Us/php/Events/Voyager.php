@@ -107,7 +107,7 @@ require("../Connexion.php");
             <div class="triCateg">
 
               <?php
-              $req = $bdd->query("SELECT titre, id_event FROM Event WHERE categorie = 'vogager' ");
+              $req = $bdd->query("SELECT titre, id_event FROM Event WHERE categorie = 'voyager' ");
               while ($contenu= $req->fetch()) {
                   ?>
 
@@ -121,7 +121,7 @@ require("../Connexion.php");
               <div class="scrib">
               <img src="../../img/fleche1.png">
                   <p>
-                      <strong> <a href="../Show_Event.php?id=<?php echo $contenu['id_event'];?>"><?php echo htmlspecialchars($contenu['titre']);?></strong></a><br>
+                    <strong> <a href="../Show_Event.php?id=<?php echo $contenu['id_event'];?>"><?php echo htmlspecialchars($contenu['titre']);?></strong></a><br>
                   </p>
               <img src="../../img/fleche2.png">
               </div>

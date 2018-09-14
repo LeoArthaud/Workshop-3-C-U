@@ -72,7 +72,7 @@
 						<div class="col-md-12 text-center">
 							<h1 class="white typed">Bienvenue sur Camp'Us !</h1>
                             <span class="typed-cursor">|</span>
-                            <h3 class="light white">Connectes toi pour découvrir les activités de ton campus !</h3>
+                            <h3 class="light white">Connecte toi pour découvrir les activités de ton campus !</h3>
 						</div>
 					</div>
                     <div class="choix">
@@ -85,7 +85,7 @@
 				</div>
 			</div>
 		</div>
-	</header>	
+	</header>
 	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content modal-popup">

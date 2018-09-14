@@ -13,6 +13,6 @@ $req->execute(array(
         $_POST['infos'],
         $_SESSION['prenom']));
 
-header('Location: Show_User.php');
+header('Location: ../index.php');
 
 ?>

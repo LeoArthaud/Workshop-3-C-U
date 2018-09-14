@@ -109,8 +109,8 @@ require("Connexion.php");
         $req->execute(array($idevent));
         $contenu=$req->fetch();
         ?>
-    
-    
+
+
 	<section id="services" class="section section-padded">
 		<div class="container">
 			<div class="row text-center title">
@@ -118,12 +118,12 @@ require("Connexion.php");
                 <img src="../img/ornement.png" style="padding-bottom: 20px;">
 			</div>
 
-            
-            
-           
-            
-            
-            
+
+
+
+
+
+
             <div class="eventdetail">
     <p>
 
@@ -146,11 +146,11 @@ require("Connexion.php");
     <?php echo htmlspecialchars($auteur['nom']); }?> <br>
     </p>
 </div>
-            
-            
-            
-            
-            
+
+
+
+
+
 <div class="com">
     <p>
         <h2 class="blue">Commentaires</h2><br>
@@ -199,8 +199,8 @@ require("Connexion.php");
 
     </form>
 </div>
-            
-            
+
+
 
         </div>
     </section>
@@ -248,7 +248,7 @@ require("Connexion.php");
                 <?php echo $donnees['infos']; ?> <br>
             </h5>
 
-            <a href="Modify_User.php"><div class="user4">
+            <a href="#" data-toggle="modal" data-target="#modal4"><div class="user4">
                 <i class="fas fa-pencil-alt"></i>
                 <h5 class="white light">Modifier</h5>
             </div></a>
@@ -261,6 +261,49 @@ require("Connexion.php");
     </div>
 </div>
 
+<!--POPUP MODIF PROFIL    -->
+
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-popup">
+            <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+            <div class="user2">
+                <i class="far fa-user"><h5 class="white" style="float:left;"></h5></i>
+            </div>
+
+            <div class="formEvent">
+            <form action="php/Data_Change.php" method="POST">
+
+                <h5 class="white">
+                Nom :
+                    <input type="text" name="prenom" value="<?php echo $donnees['prenom']; ?>" required> <br>
+                </h5>
+                <h5 class="white">
+                Prénom:
+                    <input type="text" name="nom" value="<?php echo $donnees['nom']; ?>" required> <br>
+                </h5>
+                <h5 class="white">
+                Promo :
+                    <input type="text" name="promo" value="<?php echo $donnees['promo']; ?>" required> <br>
+                </h5>
+                <h5 class="white">
+                A propos:
+                    <input type="text" name="infos" value="<?php echo $donnees['infos']; ?>" required> <br>
+                </h5>
+                <h5 class="white">
+                Contact :
+                    <input type="text" name="email" value="<?php echo $donnees['email']; ?>" required> <br>
+                </h5>
+                <h5 class="white">
+                    <input type="submit" value="Valider">
+                </h5>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</div>
 
 <!--POPUP EVENEMENT-->
 
@@ -343,4 +386,3 @@ require("Connexion.php");
 </body>
 
 </html>
-

@@ -43,8 +43,8 @@ require("php/Connexion.php");
     <!-- Main style -->
     <link rel="stylesheet" type="text/css" href="css/cardio.css">
 </head>
-      
-    
+
+
 <?php
 
 	$ntm = $_SESSION['prenom'];
@@ -113,7 +113,7 @@ require("php/Connexion.php");
 		<div class="container">
 			<div class="row text-center title">
 				<h2>Rejoins des gens !</h2>
-				<h4 class="light muted">Choisis l'activité de ton choix et découvre qui de ton campus veut faire de même !</h4>
+				<h4 class="light muted">Clique sur l'activité de ton choix et découvre qui de ton campus veut faire de même !</h4>
 			</div>
             <div class="categChoix">
                 <div class="col-sm-12 text-center text-center-mobile">
@@ -188,7 +188,7 @@ require("php/Connexion.php");
                 A propos:
                 <?php echo $donnees['infos']; ?> <br>
             </h5>
-            
+
            <a href="#" data-toggle="modal" data-target="#modal4"><div class="user4">
                 <i class="fas fa-pencil-alt"></i>
                 <h5 class="white light">Modifier</h5>
@@ -201,12 +201,12 @@ require("php/Connexion.php");
         </div>
     </div>
 </div>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
 <!--POPUP MODIF PROFIL    -->
 
 <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -216,37 +216,37 @@ require("php/Connexion.php");
             <div class="user2">
                 <i class="far fa-user"><h5 class="white" style="float:left;"></h5></i>
             </div>
-            
+
             <div class="formEvent">
-            <form action="Data_Change.php" method="POST">
-                    
+            <form action="php/Data_Change.php" method="POST">
+
                 <h5 class="white">
                 Nom :
                     <input type="text" name="prenom" value="<?php echo $donnees['prenom']; ?>" required> <br>
                 </h5>
                 <h5 class="white">
                 Prénom:
-                    <input type="text" name="nom" value="<?php echo $donnees['nom']; ?>" required> <br> 
+                    <input type="text" name="nom" value="<?php echo $donnees['nom']; ?>" required> <br>
                 </h5>
                 <h5 class="white">
                 Promo :
                     <input type="text" name="promo" value="<?php echo $donnees['promo']; ?>" required> <br>
                 </h5>
                 <h5 class="white">
-                A propos: 
+                A propos:
                     <input type="text" name="infos" value="<?php echo $donnees['infos']; ?>" required> <br>
                 </h5>
                 <h5 class="white">
-                Contact :  
+                Contact :
                     <input type="text" name="email" value="<?php echo $donnees['email']; ?>" required> <br>
                 </h5>
-                <h5 class="white">	
+                <h5 class="white">
                     <input type="submit" value="Valider">
                 </h5>
-                </form>	 
+                </form>
             </div>
 
-	
+
         </div>
     </div>
 </div>

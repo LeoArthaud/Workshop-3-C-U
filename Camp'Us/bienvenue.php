@@ -75,13 +75,6 @@
                             <h3 class="light white">Connectes toi pour découvrir les activités de ton campus !</h3>
 						</div>
 					</div>
-                    <div class="choix">
-                        <div class="col-md-12 text-center">
-                            <div class="bouton1">
-					           <a href="#" data-toggle="modal" data-target="#modal1" class="btn2 btn-blue">Se connecter !</a>
-                            </div>
-                        </div>
-                    </div>
 				</div>
 			</div>
 		</div>

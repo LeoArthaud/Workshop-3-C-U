@@ -1722,5 +1722,24 @@ footer .social-footer li:hover a {
 }
     
     
-    
+.eventdetail p{
+    text-align: center;
+    font-size: 24px;
+} 
+
+.com{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 24px;
+}  
+
+.com img{
+    padding-bottom: 50px;
+}
+
+
+.com input{
+    width: 80%;
+    margin-bottom: 20px;
+}
 

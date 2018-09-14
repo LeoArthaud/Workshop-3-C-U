@@ -188,8 +188,8 @@ require("php/Connexion.php");
                 A propos:
                 <?php echo $donnees['infos']; ?> <br>
             </h5>
-
-            <a href="Modify_User.php"><div class="user4">
+            
+           <a href="#" data-toggle="modal" data-target="#modal4"><div class="user4">
                 <i class="fas fa-pencil-alt"></i>
                 <h5 class="white light">Modifier</h5>
             </div></a>
@@ -198,6 +198,55 @@ require("php/Connexion.php");
                 <i class="fas fa-sign-out-alt"></i>
                 <h5 class="white light">déconnexion</h5>
             </div></a>
+        </div>
+    </div>
+</div>
+    
+    
+    
+    
+    
+    
+<!--POPUP MODIF PROFIL    -->
+
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-popup">
+            <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+            <div class="user2">
+                <i class="far fa-user"><h5 class="white" style="float:left;"></h5></i>
+            </div>
+            
+            <div class="formEvent">
+            <form action="Data_Change.php" method="POST">
+                    
+                <h5 class="white">
+                Nom :
+                    <input type="text" name="prenom" value="<?php echo $donnees['prenom']; ?>" required> <br>
+                </h5>
+                <h5 class="white">
+                Prénom:
+                    <input type="text" name="nom" value="<?php echo $donnees['nom']; ?>" required> <br> 
+                </h5>
+                <h5 class="white">
+                Promo :
+                    <input type="text" name="promo" value="<?php echo $donnees['promo']; ?>" required> <br>
+                </h5>
+                <h5 class="white">
+                A propos: 
+                    <input type="text" name="infos" value="<?php echo $donnees['infos']; ?>" required> <br>
+                </h5>
+                <h5 class="white">
+                Contact :  
+                    <input type="text" name="email" value="<?php echo $donnees['email']; ?>" required> <br>
+                </h5>
+                <h5 class="white">	
+                    <input type="submit" value="Valider">
+                </h5>
+                </form>	 
+            </div>
+
+	
         </div>
     </div>
 </div>
